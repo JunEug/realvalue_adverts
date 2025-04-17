@@ -21,7 +21,7 @@ public class Listing {
     private String listingUrl;
 
     @Column(name = "price")
-    private Integer price;
+    private String price;
 
     @Column(name = "price_per_sqm")
     private double pricePerSqm;
@@ -78,7 +78,7 @@ public class Listing {
     protected Listing() {}
 
     // All-args constructor
-    public Listing(String listingId, String platformId, String listingUrl, int price, double pricePerSqm,
+    public Listing(String listingId, String platformId, String listingUrl, String price, double pricePerSqm,
                    double mortgageRate, String address, double area, int rooms, int floor, int houseFloors,
                    String description, String updateDate, String companyName, String propertyType,
                    String dealType, double latitude, double longitude, String subwayNames,
